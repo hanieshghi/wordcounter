@@ -1,0 +1,13 @@
+<h1>your text has {{wordnums}} words </h1>
+
+<a href="{% url 'home' %}">Start Again</a>
+
+<h3>Your Text is:</h3>
+{{yourtext}}
+<h3>Word Counts:</h3>
+{% for word , counttotal in wordcounters %}
+
+{{word}} - {{counttotal}}
+<br />
+
+{% endfor %}
